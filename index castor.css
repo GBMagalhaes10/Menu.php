@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+    position: fixed;
+    flex-direction: row;
+    background: #001a66;
+    padding: 20px;
+    width: 100%;
+    height: 63px;
+}
+
+
+
+
+
+/*título do header*/
+.left h3{
+    color: #fff;
+    margin: 0;
+    margin-top: -25px;
+    margin-left: 132px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+    flex-direction: row;
+}
+.left span{
+    color: #51b3ec;
+}
+/*fim do título*/
+
+
+
+
+/*botão sair*/
+.sair_btn{
+    
+    padding: 5px;
+    background: #51b3ec;
+    text-decoration: none;
+    float: right;
+    margin-top: -53px;
+    margin-right: -10px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+.sair_btn:hover{
+    background: #51b3ec;
+}
+/*fim botão sair*/
+
+
+
+
+
+/*sidebar*/
+.sidebar{
+  z-index: 1;
+  top: 0;
+  background: #001a66;
+  margin-top: 63px;
+  padding-top: 2px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: calc(100% - 8%);
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+    
+}
+
+
+
+
+/*imagem do usuário sidebar*/
+.sidebar .image{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: 15px;
+    
+}
+
+
+
+
+
+/*letras sidebar*/
+.sidebar h2{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*linhas sidebar*/
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 52px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property:background ;
+}
+
+
+
+
+/*hover palavras sidebar*/
+.sidebar a:hover{
+    margin-top: -2px;
+    background: #9e5e09;
+    color: #fff;
+}
+
+
+
+/*ícone sidebar */
+.sidebar a ion-icon{
+    padding-right: 10px;
+}
+
+/*personalização sidebar*/
+label #sidebar_btn{
+    z-index: 1;
+    position: fixed;
+    color: #fff;
+    font-size: 25px;
+    margin: -18px -4px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property:color ;
+}
+
+/*cor de hover*/
+label #sidebar_btn:hover{
+    color: #51b3ec;
+}
+
+
+
+
+/*início da animação*/
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+.content{
+    background: url(castorlogo.png) no-repeat;
+    margin-left: -10px;
+    background-position: center;
+    height: 100vh;
+    transition: 0.5s;
+}
+#check:checked ~ .content{
+    margin-left: 60px;
+}
+#check{
+    display: none;
+}
+/*fim da animação*/
+
+
+
+/*logo ISERJ branca*/
+.img_logo{
+  width: 120px;
+  margin-left: 20px;
+  height: 40px;
+  margin-top: -50px;
+}
+
+
+
+/*nome do usuário*/
+.name-usu label{
+    font-size: 18px;
+    color: white;
+    margin-top: 5px;
+    margin: 5px;
+}
+
+
+
+
+/*barra de navegação e trilho*/
+::-webkit-scrollbar{
+    width: 8px;
+    height: 1px;
+    background-color:#9e5e09;
+    cursor: pointer;
+    
+}
+
+
+/*retângulo que se movimenta pelo trilho*/
+::-webkit-scrollbar-thumb{
+    background-color: solid transparent;
+    border-radius: 20px;
+    width: 10px;
+}
+/*fim barra de navegação*/
